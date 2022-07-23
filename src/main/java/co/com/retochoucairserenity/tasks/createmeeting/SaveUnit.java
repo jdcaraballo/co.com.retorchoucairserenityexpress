@@ -18,16 +18,9 @@ public class SaveUnit implements Task {
                 Click.on(BOX_UNIT),
                 Click.on(BOX_UNIT_NAME),
                 Enter.theValue("Reunión0001").into(BOX_UNIT_NAME),
-
                 Click.on(BTN_SAVE_UNIT),
-
                 Click.on(BTN_SAVE_WHOLE_MEET),
-
-
-
                 Wait.unTiempo(2000)
-
-
         );
     }
     public static SaveUnit enPagina() {
