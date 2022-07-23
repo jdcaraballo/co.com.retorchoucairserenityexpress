@@ -1,7 +1,7 @@
 package co.com.retochoucairserenity.tasks;
 
-import co.com.retochoucairserenity.interactions.Esperar;
-import co.com.retochoucairserenity.interactions.EsperarElemento;
+import co.com.retochoucairserenity.interactions.Wait;
+import co.com.retochoucairserenity.interactions.WaitElement;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -24,10 +24,10 @@ public class CreateBusiness implements Task {
                 Click.on(MEN_BUSINESS_UNITS),
                 Click.on(MEN_CREATE_BUSINESS_UNITS),
                 Click.on(BOX_NAME_BUSINESS),
-                EsperarElemento.esClickable(BOX_NAME_BUSINESS),
+                WaitElement.esClickable(BOX_NAME_BUSINESS),
                 Enter.theValue(nameBusiness).into(BOX_NAME_BUSINESS),
                 Click.on(BTN_SAVE_BUSINESS),
-                Esperar.unTiempo(2000)
+                Wait.unTiempo(2000)
         );
 
     }

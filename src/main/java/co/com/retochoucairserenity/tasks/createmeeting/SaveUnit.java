@@ -1,14 +1,11 @@
 package co.com.retochoucairserenity.tasks.createmeeting;
 
-import co.com.retochoucairserenity.interactions.Esperar;
+import co.com.retochoucairserenity.interactions.Wait;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
-import org.openqa.selenium.Keys;
 
-import static co.com.retochoucairserenity.userinterface.createmeetinguser.SaveMeetingUser.*;
 import static co.com.retochoucairserenity.userinterface.createmeetinguser.SaveUnitUser.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -28,7 +25,7 @@ public class SaveUnit implements Task {
 
 
 
-                Esperar.unTiempo(2000)
+                Wait.unTiempo(2000)
 
 
         );

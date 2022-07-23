@@ -6,16 +6,16 @@ import net.serenitybdd.screenplay.Interaction;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class Esperar implements Interaction {
+public class Wait implements Interaction {
 
     private final int var;
 
-    public Esperar(int var) {
+    public Wait(int var) {
         this.var = var;
     }
 
-    public static Esperar unTiempo (int var){
-        return instrumented(Esperar.class, var);
+    public static Wait unTiempo (int var){
+        return instrumented(Wait.class, var);
     }
 
     @Override

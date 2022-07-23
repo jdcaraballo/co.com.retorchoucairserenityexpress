@@ -1,6 +1,6 @@
 package co.com.retochoucairserenity.tasks;
 
-import co.com.retochoucairserenity.interactions.Esperar;
+import co.com.retochoucairserenity.interactions.Wait;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -30,7 +30,7 @@ public class Login implements Task {
                 Click.on(BOX_PASS),
                 Enter.theValue(clave).into(BOX_PASS),
                 Click.on(BTN_SIGN_IN),
-                Esperar.unTiempo(2000));
+                Wait.unTiempo(2000));
 
     }
 

@@ -7,10 +7,10 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 
-public class Presente implements Task {
+public class Present implements Task {
   Target elemento;
 
-  public Presente(Target elemento) {
+  public Present(Target elemento) {
     this.elemento = elemento;
   }
 

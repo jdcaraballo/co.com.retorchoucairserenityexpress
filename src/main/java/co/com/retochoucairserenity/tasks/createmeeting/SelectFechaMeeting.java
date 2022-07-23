@@ -1,6 +1,6 @@
 package co.com.retochoucairserenity.tasks.createmeeting;
 
-import co.com.retochoucairserenity.interactions.Esperar;
+import co.com.retochoucairserenity.interactions.Wait;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -23,7 +23,7 @@ public class SelectFechaMeeting implements Task {
                 SelectFromOptions.byVisibleText("10:00").from(SELECT_INITIAL_DHOUR),
                 Click.on(SELECT_FINAL_HOUR),
                 SelectFromOptions.byVisibleText("14:00").from(SELECT_FINAL_HOUR),
-                Esperar.unTiempo(2000)
+                Wait.unTiempo(2000)
         );
     }
     public static SelectFechaMeeting enPagina() {

@@ -1,6 +1,6 @@
 package co.com.retochoucairserenity.tasks.createmeeting;
 
-import co.com.retochoucairserenity.interactions.Esperar;
+import co.com.retochoucairserenity.interactions.Wait;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -34,7 +34,7 @@ public class SaveMeeting implements Task {
                 Hit.the(Keys.ENTER).into(LIST_USERY),
                 Click.on(BTN_SAVE),
 
-                Esperar.unTiempo(2000)
+                Wait.unTiempo(2000)
         );
     }
     public static SaveMeeting enPagina() {

@@ -4,9 +4,9 @@ import net.serenitybdd.screenplay.targets.Target;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class EsperarElemento {
+public class WaitElement {
 
-  private EsperarElemento() {}
+  private WaitElement() {}
 
   public static Clickable esClickable(Target elemento) {
     return instrumented(Clickable.class, elemento);
@@ -16,7 +16,7 @@ public class EsperarElemento {
     return instrumented(Visible.class, elemento);
   }
 
-  public static Presente esPresente(Target elemento) {
-    return instrumented(Presente.class, elemento);
+  public static Present esPresente(Target elemento) {
+    return instrumented(Present.class, elemento);
   }
 }

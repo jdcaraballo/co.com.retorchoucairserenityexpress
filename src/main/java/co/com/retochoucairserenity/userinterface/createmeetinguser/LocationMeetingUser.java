@@ -14,10 +14,6 @@ public class LocationMeetingUser {
     public static final Target BTN_SAVE_LOCATION=Target.the("BTN_SAVE_LOCATION").locatedBy("(//*[@class='fa fa-check-circle text-purple'])[2]");
 
 
-    public static final Target FINAL_DATE=Target.the("SET FECHA FINAL").locatedBy("(//*[@class='ui-datepicker-trigger'])[2]");
-    public static final Target SELECT_FINAL_DAY=Target.the("SET DÏA FINAL").locatedBy("//*[@id='ui-datepicker-div']/table/tbody/tr[5]/td[6]");
-    public static final Target SELECT_FINAL_HOUR=Target.the("SET HORA FINAL").located(By.xpath("//*[@id='Serenity_Pro_Meeting_MeetingDialog10_PropertyGrid']/div/div/div[5]/select"));
-
 
 
 
